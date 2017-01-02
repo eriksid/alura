@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gerações Brasil</title>
+</head>
+<body>
+<script >
+	function pulaLinha(){
+		document.write("<br/>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+	var anoAtual = 2017;
+	var idadeMediaQuandoTemFilhos = 28;
+	var QuantidadeDeGeracoes = (anoAtual - 1500)/idadeMediaQuandoTemFilhos;
+	mostra("Desde 1500 se passaram " + (Math.round(QuantidadeDeGeracoes)) + " Gerações.")
+</script>
+
+</body>
+</html>

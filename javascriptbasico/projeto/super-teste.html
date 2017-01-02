@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perocorre Array</title>
+</head>
+<body>
+<script>
+    function pecorreArray(array,comportamento) {
+        for (var i =0; i <= array.length -1; i ++){
+            comportamento(array[i]);
+        }
+
+    }
+    function imprimeQualquerNumero(numero) {
+
+        console.log(numero);
+    }
+    function imprimNumeroPar(numero) {
+        if (numero %2 == 0){
+            console.log(numero);
+        }
+    }
+    var numeros = [1,2,3,4,5];
+    pecorreArray(numeros,imprimeQualquerNumero);
+    pecorreArray(numeros,imprimNumeroPar);
+</script>
+
+</body>
+</html>

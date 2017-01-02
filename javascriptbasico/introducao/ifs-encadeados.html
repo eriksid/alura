@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ifs</title>
+</head>
+<body>
+
+<script>
+    ehEstagiario = true;
+    ehCLt = true;
+    var salarioMensal = 2010;
+    if (ehEstagiario || ehCLt){
+        if (salarioMensal > 0 && salarioMensal < 1000){
+            var bonus = salarioMensal * 0.05;
+            console.log("Salario > 0 e < 1000")
+            console.log(bonus)
+        }else if(salarioMensal < 2000){
+            var bonus = salarioMensal *0.10;
+            console.log("Salario < 2000");
+            console.log(bonus);
+        } else {
+            var bonus = salarioMensal * 0.15;
+            console.log("> 2000");
+            console.log(bonus);
+        }
+    }
+
+</script>
+</body>
+</html>
