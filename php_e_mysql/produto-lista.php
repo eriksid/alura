@@ -1,9 +1,11 @@
 <?php include("cabecalho.php");?>
-<?php include("conecta.php"); ?>
-<?php  
+<?php include("conecta.php");?>
+<?php include("banco-produto.php");
 
-$resultado = mysqli_query($conexao,"select * from produtos");
-while($produto=mysqli_fetch_assoc($resultado)){
+
+$produtos = listaProdutos($conexao);
+
+foreach ($produtos as $produto) {
 	echo $produto['nome'] . "<br/>";
 }
 
