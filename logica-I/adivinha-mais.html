@@ -6,18 +6,23 @@
 	
 	function verifica(){
 		
-		if (input.value == segredo) {
-		
-		alert("você acertou!")
-
-		}else{
-		alert("você errou!")
-
+		var achou = false;
+		for (var posicao = 0 ; posicao < segredos.length ; posicao++) {
+			if (input.value == segredos[posicao]) {
+			
+			alert("você acertou!");
+			achou = true;
+			break;
+			}
 		}
-	input.value = "";
-	input.focus();
+		if (achou == false) {
+			alert ("você Errou!!!")
+		}
+		input.value = "";
+		input.focus();
+		
 	}
-	var segredo = Math.round(Math.random() * 10);
+	var segredos = [5,7,10,2,3];
 	var input = document.querySelector("input");
 		input.focus();
 
