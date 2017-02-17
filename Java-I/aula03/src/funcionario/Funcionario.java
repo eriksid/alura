@@ -27,7 +27,7 @@ public class Funcionario {
         System.out.println("Nome: "+ this.nome);
         System.out.println("Departamento: " + this.departamento);
         System.out.println("Salario: " + this.salario);
-        System.out.println("Data de entrada: " + this.dataDeEntrada.dia + "/"+ this.dataDeEntrada.mes+ "/" + this.dataDeEntrada.ano);
+        System.out.println("Data de entrada: " + this.dataDeEntrada.getFormatada());
         System.out.println("RG: " + this.rg);
         System.out.println("Ganho anual: R$" + this.calculaGanhoAnual());
     }
