@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package numeros;
+package funcionario;
 
 /**
  *
  * @author correa
  */
-public class Numeros {
+public class Empresa {
     String nome;
-    int [] n;
-    void imprimiN(int [] array){
-        for (int i:array){
-            System.out.println(i);// impri array[i]
-        }
+    String cnpj;
+    Funcionario [] funcionarios;
+    int livre = 0;
+    public void adiciona(Funcionario f){
+        this.funcionarios[this.livre] = f;
+        this.livre ++;
     }
     
 }
