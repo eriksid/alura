@@ -18,5 +18,23 @@ public class Empresa {
         this.funcionarios[this.livre] = f;
         this.livre ++;
     }
+    public void mostraEmpregados(){
+         for (Funcionario fucionarioAtual:this.funcionarios){
+             if (fucionarioAtual == null){
+                 continue;
+             }
+             System.out.println("Funcionairo: "+ fucionarioAtual.nome);
+             System.out.println("Salario:"+ fucionarioAtual.salario);
+             
+        }
+    }
+    public void mostraTodasAsInformacoes(){
+        for (Funcionario fucionarioAtual : this.funcionarios){
+            if (fucionarioAtual == null){
+                continue;
+            }
+            fucionarioAtual.mostra();
+        }
+    }
     
 }

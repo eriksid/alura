@@ -17,7 +17,19 @@ public class TestaEmpresa {
     Funcionario f1 = new Funcionario();
     f1.nome = "joao";
     f1.salario = 1000.0;
+    f1.dataDeEntrada= new Data();
+    f1.dataDeEntrada.preencheData(1, 1, 2016);
     empresa1.adiciona(f1);
-    empresa1.funcionarios[0].mostra();
+    
+    Funcionario f2 = new Funcionario();
+    f2.nome = "Maria";
+    f2.salario = 1500.0;
+    f2.dataDeEntrada= new Data();
+    f2.dataDeEntrada.preencheData(1, 1, 2016);
+    empresa1.adiciona(f2);
+    
+    empresa1.mostraTodasAsInformacoes();
+    empresa1.mostraEmpregados();
+    
     }
 }
