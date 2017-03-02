@@ -21,5 +21,11 @@ namespace primerioPrograma
         {
             MessageBox.Show("Meu primeiro programa C#");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Oi!");
+            MessageBox.Show("Tudo bem?");
+        }
     }
 }
