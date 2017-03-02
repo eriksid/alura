@@ -28,8 +28,15 @@ public class TestaEmpresa {
     f2.dataDeEntrada.preencheData(1, 1, 2016);
     empresa1.adiciona(f2);
     
+    Funcionario f3 = new Funcionario();
+    f3.nome = "Maria Eduarda";
+    f3.salario = 1600.0;
+    f3.dataDeEntrada= new Data();
+    f3.dataDeEntrada.preencheData(5, 5, 2016);
+    
     empresa1.mostraTodasAsInformacoes();
     empresa1.mostraEmpregados();
+        System.out.println(empresa1.contem(f3));
     
     }
 }

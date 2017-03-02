@@ -36,5 +36,15 @@ public class Empresa {
             fucionarioAtual.mostra();
         }
     }
-    
+    boolean contem(Funcionario f) {
+        boolean tem = false;
+          for (Funcionario fucionarioAtual: this.funcionarios){
+             if (fucionarioAtual == f) {
+                tem =true;
+                      }
+            
+                
+        }
+        return tem;
+    } 
 }
