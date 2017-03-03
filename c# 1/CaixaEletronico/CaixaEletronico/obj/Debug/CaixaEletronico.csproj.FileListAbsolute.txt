@@ -1,0 +1,9 @@
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe.config
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Form1.resources
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Properties.Resources.resources
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csproj.GenerateResource.Cache
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.pdb
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.exe
+C:\xampp\htdocs\alura\c# 1\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.pdb
