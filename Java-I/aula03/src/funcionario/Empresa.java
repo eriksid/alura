@@ -23,8 +23,8 @@ public class Empresa {
              if (fucionarioAtual == null){
                  continue;
              }
-             System.out.println("Funcionairo: "+ fucionarioAtual.nome);
-             System.out.println("Salario:"+ fucionarioAtual.salario);
+             System.out.println("Funcionairo: "+ fucionarioAtual.getNome());
+             System.out.println("Salario:"+ fucionarioAtual.getSalario());
              
         }
     }

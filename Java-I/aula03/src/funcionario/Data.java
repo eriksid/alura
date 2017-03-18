@@ -10,9 +10,9 @@ package funcionario;
  * @author correa
  */
 public class Data {
-    int dia;
-    int mes;
-    int ano;
+    private int dia;
+    private int mes;
+    private int ano;
     public void preencheData (int dia, int mes, int ano) {
         this.dia = dia;
         this.mes = mes;
