@@ -30,6 +30,7 @@ public class Funcionario {
         System.out.println("Data de entrada: " + this.dataDeEntrada.getFormatada());
         System.out.println("RG: " + this.rg);
         System.out.println("Ganho anual: R$" + this.calculaGanhoAnual());
+        System.out.println("oi");
     }
     
     

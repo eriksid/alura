@@ -1,0 +1,2 @@
+INDEX VERSION 1.129+C:\xampp\htdocs\alura\.metadata\.plugins\org.eclipse.jdt.core
+3555742132.index
