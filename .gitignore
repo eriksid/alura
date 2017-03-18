@@ -4,3 +4,5 @@
 *.xml
 *.properties
 *.mf
+/Java-I/servLets/nbproject/private/
+/Java-I/servLets/build/
