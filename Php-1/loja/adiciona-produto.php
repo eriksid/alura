@@ -5,25 +5,26 @@ require_once("logica-usuario.php");
 
 verificaUsuario();
 
-$nome = $_POST['nome'];
-$preco = $_POST['preco'];
-$descricao = $_POST['descricao'];
+$produto = new Produto();
+$produto->nome = $_POST['nome'];
+$produto->preco = $_POST['preco'];
+$produto->descricao = $_POST['descricao'];
 
 if(array_key_exists('usado', $_POST)) {
-	$usado = "true";
+	$produto->usado = "true";
 } else {
-	$usado = "false";
+	$produto->usado = "false";
 }
 
-$categoria_id = $_POST['categoria_id'];
+$produto->categoria_id = $_POST['categoria_id'];
 
-if(insereProduto($conexao, $nome, $preco, $descricao, $usado, $categoria_id)) { ?>
-	<p class="text-success">O produto <?= $nome ?>, <?= $preco ?> foi adicionado.</p>
+if(insereProduto($conexao, $produto)) { ?>
+	<p class="text-success">O produto <?= $produto->nome ?>, <?= $produto->preco ?> foi adicionado.</p>
 <?php 
 } else {
 	$msg = mysqli_error($conexao);
 ?>
-	<p class="text-danger">O produto <?= $nome ?> não foi adicionado: <?= $msg?></p>
+	<p class="text-danger">O produto <?= $produto->nome ?> não foi adicionado: <?= $msg?></p>
 <?php
 }
 ?>
