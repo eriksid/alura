@@ -5,7 +5,7 @@ var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0 ; i <pacientes.length; i++) {
 	var paciente = pacientes[i];
-	console.log("paciente "+i+ paciente);
+	
 	var tdPeso = paciente.querySelector(".info-peso");
 	var peso = tdPeso.textContent;
 	var tdAltura = paciente.querySelector(".info-altura");
@@ -41,7 +41,17 @@ titulo.addEventListener("click",function() {
 	console.log("Olá eu fui Cliclado")
 });
 
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click",function(envent){
+	event.preventDefault();
+	console.log("fui Cliclado");
+	var form = document.querySelector("#form-adiciona");
+	nome = form.nome.value;
+	peso = form.peso.value;
+	altura = form.altura.value;
+	gordura = form.gordura.value;
 
+});
 	
 
 
