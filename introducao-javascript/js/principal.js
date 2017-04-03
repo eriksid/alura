@@ -44,12 +44,15 @@ titulo.addEventListener("click",function() {
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click",function(envent){
 	event.preventDefault();
-	console.log("fui Cliclado");
+	
 	var form = document.querySelector("#form-adiciona");
 	nome = form.nome.value;
 	peso = form.peso.value;
 	altura = form.altura.value;
 	gordura = form.gordura.value;
+
+	var pacienteTr = document.createElement("tr");
+	
 
 });
 	
