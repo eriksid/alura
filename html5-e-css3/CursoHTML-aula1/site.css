@@ -10,9 +10,31 @@ main h1 {
 	font-family: "Open Sans Condensed", "arial" ,sans-serif;
 }
 h2 {
-font-seze:40px;
+font-size:40px;
 font-family: "Open Sans Condensed","arial",sans-serif; 
 }
 p{
 	text-align: justify;
+}
+blockquote {
+	background-color: #D9E5E3;
+
+
+}
+nav{
+	background-color: #3C1D3D;
+	color:#F2FFFC;
+}
+footer {
+	background-color:#000000;
+	color:#F2FFFC;
+}
+main a {
+    color: #851944;
+}
+
+aside a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+	text-decoration: none;
 }
