@@ -25,7 +25,7 @@ $produto->categoria->id = $_POST['categoria_id'];
 
 if(alteraProduto($conexao, $produto) { ?>
 	<p class="text-success">O produto <?= $produto->nome ?>, <?= $produto->preco ?> foi alterado.</p>
-<?php 
+
 } else {
 	$msg = mysqli_error($conexao);
 ?>
