@@ -26,6 +26,7 @@
           <root url="phar:///Applications/MAMP/bin/apache2/bin/phpunit-5.1.3.phar/" />
           <root url="phar:///Applications/MAMP/bin/php/php7.1.1/bin/phar.phar/" />
           <root url="phar:///Applications/MAMP/bin/php/php5.4.45/bin/phar.phar/" />
+          <root url="phar:///Applications/MAMP/bin/php/php7.1.1/bin/composer.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar:///Applications/MAMP/Library/bin/phpunit-4.8.21.phar/" />
@@ -37,6 +38,7 @@
           <root url="phar:///Applications/MAMP/bin/apache2/bin/phpunit-5.1.3.phar/" />
           <root url="phar:///Applications/MAMP/bin/php/php7.1.1/bin/phar.phar/" />
           <root url="phar:///Applications/MAMP/bin/php/php5.4.45/bin/phar.phar/" />
+          <root url="phar:///Applications/MAMP/bin/php/php7.1.1/bin/composer.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
