@@ -1,10 +1,14 @@
 <?php
 namespace App\controller;
+use Cake\ORM\TableRegistry;
+
 Class ProdutosController extends AppController{
 
     public function index(){
-        $msg = "Bem vindo ao Cake Php(mensagem do controller";
-        $this->set('msg',$msg);
+
+    $produtosTable = TableRegistry::get('Produtos');
+    $produtos =$produtosTable->find('all');
+    $this->set('produtos',$produtos);
 
     }
 }
