@@ -9,5 +9,6 @@ if ($usuario == null){
 
 }else{
     header("Location:index.php?logado=1");
+    setcookie("usuario_logado",$_POST['email'],time() + 60);
 }
 die();

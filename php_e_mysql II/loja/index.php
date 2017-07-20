@@ -1,14 +1,25 @@
-<?php include("cabecalho.php"); ?>			
-
-    <h1>Bem vindo!</h1>
-    <h2>LOGIN</h2>
-
+<?php include("cabecalho.php"); ?>
 <?php if (isset($_GET['logado']) && $_GET['logado'] == 1 ){ ?>
-<p class="alert-success">Logado com sucesso</p>
+    <p class="alert-success">Logado com sucesso</p>
 <?php } ?>
 <?php if (isset($_GET['logado']) && $_GET['logado'] == 0 ){ ?>
-<p class="alert-danger">Usuario ou senha invalido</p>
+    <p class="alert-danger">Usuario ou senha invalido</p>
 <?php } ?>
+
+
+
+    <h1>Bem vindo!</h1>
+<?php if (isset($_COOKIE['usuario_logado']) ){
+    ?>
+    <p class="text-success">Você está logado como <?=$_COOKIE['usuario_logado']?></p>
+<?php }else{ ?>
+
+
+
+<h2>LOGIN</h2>
+
+
+
 <form action="login.php" method="post">
     <table class="table">
         <tr>
@@ -24,4 +35,5 @@
         </tr>
     </table>
 </form>
-<?php include("rodape.php"); ?>			
+<?php }?>
+<?php include("rodape.php"); ?>
