@@ -5,8 +5,9 @@ require_once ("banco-usuario.php");
 
 $usuario = buscaUsuario($conexao,$_POST['email'] ,$_POST["senha"]);
 if ($usuario == null){
-    echo("login ou senha invalida");
+    header("Location:index.php?logado=0");
 
 }else{
-    echo("logado");
+    header("Location:index.php?logado=1");
 }
+die();
