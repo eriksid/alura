@@ -2,6 +2,13 @@
 
     <h1>Bem vindo!</h1>
     <h2>LOGIN</h2>
+
+<?php if (isset($_GET['logado']) && $_GET['logado'] == 1 ){ ?>
+<p class="alert-success">Logado com sucesso</p>
+<?php } ?>
+<?php if (isset($_GET['logado']) && $_GET['logado'] == 0 ){ ?>
+<p class="alert-danger">Usuario ou senha invalido</p>
+<?php } ?>
 <form action="login.php" method="post">
     <table class="table">
         <tr>
