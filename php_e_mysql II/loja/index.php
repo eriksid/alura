@@ -5,6 +5,9 @@
 <?php if (isset($_GET['logado']) && $_GET['logado'] == 0 ){ ?>
     <p class="alert-danger">Usuario ou senha invalido</p>
 <?php } ?>
+<?php if (isset($_GET['falhaDeSeguranca']) && $_GET['falhaDeSeguranca'] == true ){ ?>
+    <p class="alert-danger">Você não tem acesso a está funcionalidade!</p>
+<?php } ?>
 
 
 
