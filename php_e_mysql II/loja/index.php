@@ -1,18 +1,17 @@
 <?php include("cabecalho.php");
 require_once 'logica-usuario.php';
 ?>
-<?php if (isset($_GET['logado']) && $_GET['logado'] == 1 ){ ?>
-    <p class="alert-success">Logado com sucesso!</p>
-<?php } ?>
-<?php if (isset($_GET['logado']) && $_GET['logado'] == 0 ){ ?>
-    <p class="alert-danger">Usuario ou senha invalido</p>
-<?php } ?>
-<?php if (isset($_GET['falhaDeSeguranca']) && $_GET['falhaDeSeguranca'] == true ){ ?>
-    <p class="alert-danger">Você não tem acesso a está funcionalidade!</p>
-<?php } ?>
-<?php if (isset($_GET['logout']) && $_GET['logout'] == true ){ ?>
-    <p class="alert-success">Deslogado com sucesso!</p>
-<?php } ?>
+<?php if (isset($_SESSION["danger"]) ){ ?>
+    <p class="alert-danger"><?=$_SESSION["danger"]?></p>
+<?php unset($_SESSION["danger"]);
+} ?>
+<?php if (isset($_SESSION["success"]) ){ ?>
+    <p class="alert-success"><?=$_SESSION["success"]?></p>
+<?php unset($_SESSION["success"]);
+} ?>
+
+
+
 
 
 

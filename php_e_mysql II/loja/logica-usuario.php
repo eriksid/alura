@@ -6,7 +6,8 @@ function usuarioEstaLogado(){
 
 function verificaUsuario(){
     if(!usuarioEstaLogado()){
-        header("Location:index.php?falhaDeSeguranca=true");
+        $_SESSION["danger"] = "Você não tem acesso a está funcionabilidade!";
+        header("Location:index.php");
         die();
     }
 }
@@ -20,5 +21,6 @@ function logar($usuario){
 }
 function logout(){
     session_destroy();
+    session_start();
 }
 
