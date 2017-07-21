@@ -2,7 +2,7 @@
 require_once 'logica-usuario.php';
 ?>
 <?php if (isset($_GET['logado']) && $_GET['logado'] == 1 ){ ?>
-    <p class="alert-success">Logado com sucesso</p>
+    <p class="alert-success">Logado com sucesso!</p>
 <?php } ?>
 <?php if (isset($_GET['logado']) && $_GET['logado'] == 0 ){ ?>
     <p class="alert-danger">Usuario ou senha invalido</p>
@@ -10,13 +10,16 @@ require_once 'logica-usuario.php';
 <?php if (isset($_GET['falhaDeSeguranca']) && $_GET['falhaDeSeguranca'] == true ){ ?>
     <p class="alert-danger">Você não tem acesso a está funcionalidade!</p>
 <?php } ?>
+<?php if (isset($_GET['logout']) && $_GET['logout'] == true ){ ?>
+    <p class="alert-success">Deslogado com sucesso!</p>
+<?php } ?>
 
 
 
     <h1>Bem vindo!</h1>
 <?php if (usuarioEstaLogado()){
     ?>
-    <p class="text-success">Você está logado como <?=usuarioLogado()?></p>
+    <p class="text-success">Você está logado como <?=usuarioLogado()?> <a href="logout.php">Deslogar</a></p>
 <?php }else{ ?>
 
 

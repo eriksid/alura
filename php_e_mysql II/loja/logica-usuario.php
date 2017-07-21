@@ -1,6 +1,7 @@
 <?php
+session_start();
 function usuarioEstaLogado(){
-    return isset($_COOKIE['usuario_logado']);
+    return isset($_SESSION['usuario_logado']);
 }
 
 function verificaUsuario(){
@@ -11,9 +12,13 @@ function verificaUsuario(){
 }
 
 function usuarioLogado(){
-    return $_COOKIE['usuario_logado'];
+    return $_SESSION['usuario_logado'];
 }
 
 function logar($usuario){
-    setcookie("usuario_logado",$usuario,time() + 60);
+    $_SESSION["usuario_logado"] = $usuario;
 }
+function logout(){
+    session_destroy();
+}
+
