@@ -1,3 +1,4 @@
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -25,4 +26,8 @@
 	
 	<div class="container">
 		<div class="principal">
-			
+<?php
+require_once 'mostraAlerta.php';
+mostraAlerta("success");
+mostraAlerta("danger");
+?>
