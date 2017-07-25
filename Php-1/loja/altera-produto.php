@@ -6,11 +6,12 @@ require_once("class/categoria.php");
 
 $produto = new Produto();
 
+$categoria = new Categoria();
 $produto->id = $_POST['id'];
 $produto->nome = $_POST['nome'];
 $produto->preco = $_POST['preco'];
 $produto->descricao = $_POST['descricao'];
-$categoria = new Categoria();
+
 $categoria->id = $_POST['categoria_id'];
 
 $produto->categoria = $categoria;
@@ -23,7 +24,7 @@ if(array_key_exists('usado', $_POST)) {
 
 $produto->categoria->id = $_POST['categoria_id'];
 
-if(alteraProduto($conexao, $produto) { ?>
+if(alteraProduto($conexao,$produto)) { ?>
 	<p class="text-success">O produto <?= $produto->nome ?>, <?= $produto->preco ?> foi alterado.</p>
 
 } else {
