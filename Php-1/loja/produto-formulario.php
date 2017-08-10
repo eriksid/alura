@@ -5,12 +5,12 @@ require_once("logica-usuario.php");
 require_once("class/Categoria.php");
 require_once("class/Produto.php");
 verificaUsuario();
+
 $categoria = new categoria;
 $categoria->id =1;
 $produto = new Produto();
 $produto->categoria = $categoria;
-var_dump($produto);
-die();
+
 
 $categorias = listaCategorias($conexao);
 
